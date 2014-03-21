@@ -46,7 +46,7 @@ print
 print '- (void)encodeWithCoder:(NSCoder *)encoder {'
 
 for prop in props:
-    print '    [encoder %(encoder)s forKey:k%(keyName)s];' % prop
+    print '    [encoder %(encoder)s:_%(name)s forKey:k%(keyName)s];' % prop
 
 print '}'
 print

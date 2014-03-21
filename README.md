@@ -44,10 +44,10 @@ Given a class header, generate an NSCoding implementation.
 #define kUsesPython  @"UsesPython"
 
 - (void)encodeWithCoder:(NSCoder *)encoder {
-    [encoder encodeObject forKey:kId];
-    [encoder encodeObject forKey:kName];
-    [encoder encodeObject forKey:kHomepageURL];
-    [encoder encodeBool forKey:kUsesPython];
+    [encoder encodeObject:_id forKey:kId];
+    [encoder encodeObject:_name forKey:kName];
+    [encoder encodeObject:_homepageURL forKey:kHomepageURL];
+    [encoder encodeBool:_usesPython forKey:kUsesPython];
 }
 
 - (id)initWithCoder:(NSCoder *)decoder {
