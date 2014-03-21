@@ -9,7 +9,7 @@ If there are better ways to do these, please let me know.
 
 Given a class header, generate an NSCoding implementation.
 
-   usage: nscoding-helper.py <ClassHeader.h>
+      usage: nscoding-helper.py <ClassHeader.h>
 
 ### Person.h
 
